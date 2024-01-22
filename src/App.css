@@ -1,0 +1,314 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background: #9BC53D;
+}
+.centralConsole{
+  max-width: 350px; /* OVDE PROMENUTI POSLE U max-WIDTH */
+  margin: auto;
+  position: relative;
+}
+.headTitle{
+  text-align: center;
+  font-size: 32px;
+  color: #C3423F;
+  margin-bottom: 15px;
+  padding: 4px;
+  filter: drop-shadow(1px 1px 2px black);
+}
+.borderBot{
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #211A1E 50%, transparent 100%);;
+}
+.homeNav{
+  display: flex;
+  justify-content: center;
+}
+.logoImg img{
+  height: 100px;
+  filter: drop-shadow(1px 1px 5px black);
+}
+.aboutUs{
+  font-size: 0.7rem;
+  padding: 0 15px;
+  color: #211A1E;
+}
+.btnStyle{
+  background: #FDE74C;
+  border: 2px solid #211A1E;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 3px;
+}
+.btnStyle:hover{
+  background: #5bc0eb;
+}
+.fillters{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0px;
+  flex-wrap: wrap;
+}
+.fillterBtn{
+  color: #C3423F;
+  cursor: pointer;
+  font-size: 12px;
+  border: 2px solid #211A1E;
+  border-radius: 5px;
+  padding: 3px 4px;
+  transition: all 0.2s ease-in-out;
+  margin: 4px;
+}
+.fillterBtn:hover{
+  color: #5bc0eb;
+  background-color: #FDE74C;
+}
+.defaultBtn{
+  box-shadow: 0px 4px 4px black;
+}
+.adConsole{
+  height: 55vh;
+  max-width: 90%;
+  border: 3px solid #211A1E;
+  overflow: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.ad{
+  display: flex;
+  justify-content: space-between;
+}
+.ad p{
+  font-size: 0.6rem;
+}
+.red{
+  color: red;
+}
+.vel{
+  color: #211A1E;
+}
+.singleAd{
+  width: 49%;
+  border: 2px dotted #FDE74C;
+  height: 160px;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 5px auto;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.singleAd:hover{
+  border: 2px solid #5bc0eb;
+}
+.delBtn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+.opis{
+  font-size: 0.6rem;
+  padding: 0 3px;
+}
+.singleAd h3{
+  text-align: center;
+  font-size: 0.9rem;
+}
+.imgContainer{
+  text-align: center;
+}
+.singleAd img{
+  width: 100px;
+  height: 90px;
+  border: 1px solid #211A1E;
+  border-radius: 5px;
+}
+.size-price{
+  font-size: 0.7rem;
+}
+.size-price p{
+  font-size: 0.6rem;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  padding-left: 2px;
+}
+.contact{
+  font-size: 0.8rem;
+  justify-content: space-evenly;
+  color: #C3423F;
+  height: 100%;
+  margin-top: 20px;  
+}
+.contact p{
+  color: #211A1E;
+  white-space: wrap;
+  margin: 10px;
+  text-align: center;
+}
+.contact p a{
+  text-decoration: none;
+  color: #C3423F;
+}
+.contactNav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px 0;
+}
+/* LogIn form */
+.logInMain{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.loginForm{
+  max-width: 200px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FDE74C;
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px black;
+}
+.username{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  color: #C3423F;
+}
+.username input{
+  background: none;
+  border: none;
+  border-bottom:2px dotted #5bc0eb;
+  text-align: center;
+}
+.username input:focus{
+  outline: none;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: #9BC53D;
+}
+.submitBtn{
+  background: none;
+  border: 2px solid #C3423F;
+  color: #C3423F;
+  border-radius: 5px;
+  padding: 4px;
+  margin-top: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.submitBtn:hover{
+  background-color: #5bc0eb;
+  border: 2px solid #211A1E;
+  color: #211A1E;
+}
+.closeBtn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #C3423F;
+  font-weight: bold;
+}
+
+/* ADD NEW AD */
+.addNewAd{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FDE74C;
+  z-index: 5;
+}
+.addNewForm{
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9BC53D;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px black;
+}
+.singleAdd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  color: #C3423F;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.singleAddFile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  color: #C3423F;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.addNewForm input,
+.addNewForm select,
+.addNewForm textarea{
+  border: none;
+  background: none;
+  border-bottom: 2px dotted #FDE74C;
+  color: #211A1E;
+  text-align: center;
+  margin-top: 10px;
+}
+.singleAddFile input{
+  border: 1px dotted #FDE74C;
+  cursor: pointer;
+  padding: 3px;
+}
+.addNewForm input:focus,
+.addNewForm select:focus,
+.addNewForm textarea:focus{
+  outline: none;
+}
+.discardBtn{
+  color: #C3423F;
+  font-size: 0.8rem;
+  margin: 10px 0 5px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px dotted #C3423F;
+  transition: all 0.2s ease-in-out;
+}
+.discardBtn:hover{
+  color: #211A1E;
+  border-bottom: 1px dotted #211A1E;
+}
+
+/* DATA CATEGORY */
+.activeData{
+  color: #5bc0eb;
+  background-color: #FDE74C;
+}
